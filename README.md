@@ -16,12 +16,6 @@ Este repositório contém **material de estudo** sobre o NotPetya, um dos maiore
 - Mostrar como funcionam ransomwares e wipers de forma **didática**.
 - Promover consciência sobre **segurança digital** e **boas práticas de proteção**.
 
-## 📂 Conteúdo
-
-- `README.md` → este documento com a explicação.
-- `docs/` → artigos, links e resumos sobre o ataque.
-- `slides/` → material de apresentação (se houver).
-
 ## 🔒 Aviso Importante
 
 > Este repositório não contém código malicioso.  
