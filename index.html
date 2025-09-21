@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💀 NotPetya Simulation</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      padding: 20px;
+    }
+    button {
+      background: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    nav a {
+      color: lime;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">🛑 Simulation</a> |
+    <a href="about.html">📖 About</a> |
+    <a href="impact.html">🌍 Impact</a> |
+    <a href="protection.html">🛡️ Protection</a>
+  </nav>
+
+  <h1>💀 NotPetya Virus Simulation</h1>
+  <p>Your system is being infected...</p>
+  <button onclick="infect()">Start Infection</button>
+  <pre id="terminal"></pre>
+
+  <script>
+    function infect() {
+      const terminal = document.getElementById('terminal');
+      let lines = [
+        '[*] Initializing payload...',
+        '[*] Disabling Windows Defender...',
+        '[*] Encrypting MFT...',
+        '[*] Overwriting Master Boot Record...',
+        '[X] System failure imminent.',
+        '💀 NotPetya has taken over this machine.'
+      ];
+      let i = 0;
+      let interval = setInterval(() => {
+        if (i < lines.length) {
+          terminal.textContent += lines[i++] + "\n";
+        } else {
+          clearInterval(interval);
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
